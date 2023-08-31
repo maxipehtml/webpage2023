@@ -68,14 +68,14 @@ document.addEventListener("DOMContentLoaded", function () {
           <img src="${post.image}" alt="Imagen de la publicación">
         `;
       }
-  
+
       if (post.websiteLink && post.websiteLink.trim() !== "") {
         postContent += `
           <a href="${post.websiteLink}" target="_blank">Ir al sitio</a>
         `;
       }
   
-      if (post.youtubeLink && post.youtubeLink.trim() !== "") {
+      if (post.youtubeLink) {
         postContent += `
           <iframe width="560" height="315" src="https://www.youtube.com/embed/${post.youtubeLink}" frameborder="0" allowfullscreen></iframe>
         `;
