@@ -53,27 +53,34 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Error fetching data:", error);
       });
   }
-
   function renderPosts(posts) {
     posts.forEach((post) => {
       const postElement = document.createElement("div");
       postElement.classList.add("post");
-
+  
       let postContent = `
         <h2>${post.title}</h2>
         <p>${post.content}</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/${post.youtubeLink}" frameborder="0" allowfullscreen></iframe>
       `;
-
+  
       if (post.image) {
-        postContent = `
-          <h2>${post.title}</h2>
+        postContent += `
           <img src="${post.image}" alt="Imagen de la publicación">
-          <p>${post.content}</p>
+        `;
+      }
+  
+      if (post.websiteLink && post.websiteLink.trim() !== "") {
+        postContent += `
+          <a href="${post.websiteLink}" target="_blank">Ir al sitio</a>
+        `;
+      }
+  
+      if (post.youtubeLink && post.youtubeLink.trim() !== "") {
+        postContent += `
           <iframe width="560" height="315" src="https://www.youtube.com/embed/${post.youtubeLink}" frameborder="0" allowfullscreen></iframe>
         `;
       }
-
+  
       postElement.innerHTML = postContent;
       blogContainer.appendChild(postElement);
     });
