@@ -1,5 +1,12 @@
 [
 {
+  "title": "Animation Images with AI ",
+  "image": "",
+  "content": "Web for animating your own images by AI",
+  "youtubeLink": "LST4Q17AUIE?si=Q9yuVAx30L-pqo5a",
+  "category": "Tutorials"
+
+},{
   "title": "Generacion de Luz Volumetrica para render en Blender",
   "image": "",
   "content": "Volumetric lights",
@@ -15,9 +22,16 @@
 
 },{
   "title": "Landpage Interactiva",
-  "image": "https://imgur.com/wDzpdXw",
-  "content": "https://maxipereira-landpage-2023.vercel.app/",
+  "image": "./img/landpage-min.jpg",
+  "content": "Implementacion de mi rostro 3d en forma interactiva con la web",
   "websiteLink": "https://maxipereira-landpage-2023.vercel.app/",
+  "category": "Web"
+
+},{
+  "title": "Portfolio Web Interactivo",
+  "image": "./img/portfolioweb-min.jpg",
+  "content": "Recopilacion de distintas areas y nueva forma de visualizacion",
+  "websiteLink": "https://portfolioweb-maxipereira.vercel.app/",
   "category": "Web"
 
 },{

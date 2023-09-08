@@ -1,14 +1,16 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+  font-family:  'Roboto', sans-serif;
+  
     background-color: #1a1a1a; /* Fondo negro azulado */
     color: #ffffff; /* Texto blanco */
     margin: 0;
     padding: 0;
   }
-  
+
   .main-title {
+    font-family: 'Press Start 2P', cursive;
     text-align: center;
     margin-top: 20px;
     font-size: 2rem;
