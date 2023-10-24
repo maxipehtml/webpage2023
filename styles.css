@@ -52,7 +52,25 @@ body {
     border-radius: 8px;
   }
   
-
+  .filter {
+    text-align: center;
+  }
+  
+  .filter-button {
+    background-color: #00aaff00; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    border:solid 1px;
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-button:hover {
+    background-color: #0077aa; /* Cambia el color de fondo al pasar el cursor */
+  }
+  
   
 
   

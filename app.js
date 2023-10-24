@@ -1,15 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
   const blogContainer = document.getElementById("blog-container");
-  const categoryFilter = document.getElementById("categoryFilter");
+  const filterButtons = document.querySelectorAll(".filter-button");
   let currentPage = 1;
   let isLoading = false;
-  let selectedCategory = "all"; // Categoría inicial (todas)
+  let selectedCategory = "Tutorials"; // Cambia a la categoría deseada como predeterminada
 
-  categoryFilter.addEventListener("change", function () {
-    selectedCategory = categoryFilter.value;
-    currentPage = 1;
-    blogContainer.innerHTML = ""; // Limpiar el contenedor antes de cargar nuevas publicaciones
-    fetchPosts(currentPage);
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      selectedCategory = button.getAttribute("data-category");
+      currentPage = 1;
+      blogContainer.innerHTML = ""; // Limpiar el contenedor antes de cargar nuevas publicaciones
+      fetchPosts(currentPage);
+    });
   });
 
   function fetchPosts(page) {
